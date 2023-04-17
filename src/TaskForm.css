@@ -1,0 +1,29 @@
+.task__form {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    margin-bottom: 50px;
+    margin-left: 45px;
+    margin-right: 30px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .task__form {
+        
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+}
+  
+@media screen and (max-width: 420px) {
+    .task__form {
+    width: 200px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+

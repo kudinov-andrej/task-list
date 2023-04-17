@@ -1,0 +1,51 @@
+.footer {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 685px) {
+    .footer {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+
+@media screen and (max-width: 685px) {
+    .footer {
+        margin-left: 5%;
+    margin-right: 5%;
+    }
+}
+
+.footer__avtor {
+    max-width: 200px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 685px) {
+    .footer__avtor {
+        max-width: 150px;
+    }
+}
+
+.footer__data {
+    max-width: 200px;  
+}
+
+@media screen and (max-width: 685px) {
+    .footer__data {
+        max-width: 150px;
+    }
+}

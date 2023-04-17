@@ -1,0 +1,16 @@
+.App-header {
+  margin-left: 10%;
+   max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .header__logo {
+    
+    width: 40px;
+    margin-top: 50px;
+    align-self: flex-start;
+  }

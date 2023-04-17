@@ -1,0 +1,108 @@
+.task__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    align-items: center;
+    
+  }
+  
+  .task__text {
+    margin: 0;
+    text-align: start ;
+    word-wrap: break-word;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 80px;
+    padding-left: 30px;
+    margin-right: 20px;
+    width: 400px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    border-radius: 20px;
+    background-color: rgb(60, 61, 61);
+  }
+
+  @media screen and (max-width: 685px) {
+    .task__text {
+      padding-right: 40px;
+      width: 250px;
+    }
+}
+  
+@media screen and (max-width: 420px) {
+  .task__text {
+    width: 200px;
+    padding-right: 30px;
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+
+  .task__button-conteiner {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 10px;
+  }
+  
+  @media screen and (max-width: 685px) {
+    .task__button-conteiner {
+      gap: 5px;
+    }
+}
+
+
+
+  .task__button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 685px) {
+    .task__button {
+      width: 20px;
+    height: 20px;
+    }
+}
+  
+  .task__button:hover {
+    scale: 1.1;
+  }
+  
+  .task__button_trash {
+    background-image: url('./image/icons8-очистить-корзину-50.png');
+  
+  }
+  
+  .task__button_trash_wite {
+    background-image: url('./image/icons8-очистить-корзину-50светлаятема.png');
+  }
+  
+  .task__button_edit {
+    background-image: url('./image/icons8-карандаш-64.png');
+  }
+  
+  .task__button_finish {
+    background-image: url('./image/icons8-галочка-64.png');
+  }
+  
+  .task__button_edit_wite {
+    background-image: url('./image/icons8-карандаш-64\ светлаятема.png');
+  }
+  
+  .task__button_finish_wite {
+    background-image: url('./image/icons8-галочка-64\ \(1\)светлаятема.png');
+  }

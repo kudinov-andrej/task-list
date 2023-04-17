@@ -1,0 +1,32 @@
+.button {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 46px;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url('./image/icons8-добавить-50.png');
+}
+
+@media screen and (max-width: 685px) {
+    .button {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+  
+@media screen and (max-width: 429px) {
+    .button {
+        width: 15px;
+        height: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        
+  }
+}

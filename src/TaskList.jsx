@@ -6,7 +6,10 @@ function TaskList({posts, remove, change}) {
   return (
       <div className='task__list'>
         {posts.map((post, index) =>
-                <TaskItem number={index + 1} post={post} key={post.id} 
+                <TaskItem 
+                number={index + 1} 
+                post={post} 
+                key={post.id} 
                 remove = {remove}
                 change={change}/>)}
       </div>

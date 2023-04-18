@@ -1,36 +1,23 @@
-
-
 .form__chenge {
-    min-width: 630px;
-    margin-left: 4%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+ 
 }
 
-@media screen and (max-width: 685px) {
-    .form__chenge {
-        margin-left: -4%;
-      width: 250px;
-    }
-}
-  
-@media screen and (max-width: 490px) {
-    .form__chenge {
-        margin-left: -10%;
-    width: 250px;
-    font-size: 15px;
-    line-height: 20px;
+@media screen and (max-width: 900px) {
+  .form__chenge {
+      margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 420px) {
-    .form__chenge {
-        margin-left: 0;
-        width: 230px;
-    
+@media screen and (max-width: 430px) {
+  .form__chenge {
+      width: 76vw;
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 20px;
   }
 }

@@ -6,8 +6,14 @@
     
     
   }
+  .text {
+    margin: 0;
+  }
   
   .task__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 0;
     text-align: start ;
     word-wrap: break-word;
@@ -16,7 +22,7 @@
     padding-right: 80px;
     padding-left: 30px;
     margin-right: 20px;
-    width: 400px;
+    width: 39.0625vw;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -30,13 +36,12 @@
   @media screen and (max-width: 685px) {
     .task__text {
       padding-right: 40px;
-      width: 250px;
+      
     }
 }
   
 @media screen and (max-width: 420px) {
   .task__text {
-    width: 200px;
     padding-right: 30px;
     padding-left: 15px;
     font-size: 15px;

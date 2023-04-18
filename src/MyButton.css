@@ -1,8 +1,6 @@
 .button {
     width: 50px;
     height: 50px;
-    margin-left: 30px;
-    margin-right: 46px;
     background-color: transparent;
     border: none;
     background-position: center;
@@ -16,17 +14,23 @@
     .button {
         width: 40px;
         height: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
+        
     }
 }
   
 @media screen and (max-width: 429px) {
     .button {
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
         margin-left: 0;
         margin-right: 0;
         
   }
 }
+
+@media screen and (max-width: 360px) {
+    .button {
+        width: 20px;
+        height: 20px;
+  }
+  }

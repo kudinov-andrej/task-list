@@ -27,15 +27,18 @@ function TaskItem(props) {
           <EditTaskForm post={props.post} onEdit={handleEdit} />
         ) : (
           <>
-            <p
+          <div className="task__text">
+          <span style={{
+                marginRight: '10px'}}>{props.number}.{" "}</span>
+            <p className="text"
               style={{
                 textDecoration: isthrough ? "line-through" : "none",
                 color: textColor,
               }}
-              className="task__text"
             >
-              {props.number}.{props.post.body}
+              {props.post.body}
             </p>
+            </div>
             <div className="task__button-conteiner">
               <button
                 onClick={() => setIsEditing(true)}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './MyButtonChenge.css'
-import { ReactComponent as ButtonAdd } from './image/add-square-svgrepo-com.svg';
+
 
 function MyButtonChenge({...props}) {
 

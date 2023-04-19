@@ -7,13 +7,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-image: url('./image/icons8-добавить-50.png');
+   background-image: url("./image/add-create-new-plus-svgrepo-com.svg");
 }
 
 @media screen and (max-width: 685px) {
     .button {
         width: 40px;
         height: 40px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        
         
     }
 }

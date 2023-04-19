@@ -1,10 +1,11 @@
 import './Footer.css';
-import React, { useState, useEffect } from "react";
-
+import React, { useState, useEffect, useContext } from "react";
+import ThemeContext from './context/TeameContext';
   
 
 function Footer() {
-    
+
+    const { theme } = useContext(ThemeContext);
     const [date, setDate] = useState(new Date());
 
     useEffect(() => {
@@ -16,7 +17,12 @@ function Footer() {
     }, []);
 
   return ( 
-      <footer className='footer' >
+      <footer className='footer' 
+      style={{
+        backgroundColor: theme.backgroundColor,
+        color: theme.textColor,
+      }}
+      >
         <p className='footer__avtor'>Web-разработчик: Кудинов Андрей</p>
         < p className='footer__data'>Текущая дата: {date.toLocaleString()}</p>
       </footer> 

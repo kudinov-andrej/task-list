@@ -1,16 +1,17 @@
 .App-header {
-  margin-left: 10%;
-   max-width: 300px;
+  width: 80%;
+    margin-left: 10%;
     display: flex;
     flex-direction: row;
     align-self: flex-start;
+    justify-content: space-between;
     font-size: calc(10px + 2vmin);
     color: white;
   }
   
   .header__logo {
-    
     width: 40px;
     margin-top: 50px;
     align-self: flex-start;
+    
   }

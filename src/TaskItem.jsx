@@ -14,7 +14,6 @@ function TaskItem(props) {
   const [textColor, setTextColor] = useState('white');
   const [isEditing, setIsEditing] = useState(false);
 
-
   const handleButtonClick = () => {
     setIsthrough(!isthrough);
     setTextColor(textColor === 'white' ? (props.theme === 'dark' ? 'black' : 'green') : 'white');

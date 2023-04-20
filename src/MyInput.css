@@ -24,6 +24,8 @@
       width: 38.0625vw;
       margin-right: 50px;
       padding-right: 20px;
+      font-size: 20px;
+    line-height: 25px;
       text-align: start ;
     }
   }
@@ -37,24 +39,43 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 431px) {
   .input {
-    width: 33.0625vw;
+    width: 38.0625vw;
+    margin-right: 60px;
+    margin-left: -2px;
 }
 }
+
+@media screen and (max-width: 419px) {
+  .input {
+    width: 34.0625vw;
+    margin-right: 60px;
+    margin-left: -2px;
+    padding-left: 33px;
+    padding-right: 33px;
+    
+}
+}
+
 
 @media screen and (max-width: 400px) {
   .input {
     width: 32.0625vw;
-    font-size: 15px;
-  line-height: 20px;
+    font-size: 12px;
+    line-height: 15px;
 }
 }
 
-@media screen and (max-width: 353px) {
+@media screen and (max-width: 360px) {
   .input {
-    width: 30.0625vw;
-    font-size: 12px;
-  line-height: 25px;
+    width: 32.0625vw;
+    margin-left: -10px;
+  }
 }
+
+@media screen and (max-width: 315px) {
+  .input {
+    margin-left: -14px;
+  }
 }

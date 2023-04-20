@@ -10,7 +10,7 @@
 
 .text {
   margin: 0;
- 
+  max-width: 39.0625vw;
 }
 
 .task__text {
@@ -32,6 +32,7 @@
   border-radius: 20px;
   background-color: rgb(60, 61, 61);
   border:  solid 4px rgb(60, 61, 61);
+  
 }
 
 @media screen and (max-width: 685px) {

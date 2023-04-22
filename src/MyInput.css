@@ -3,6 +3,7 @@
     margin: 0;
     margin-right: 80px;
     padding: 0;
+    max-width: 1024px;
     border: none;
     text-align: center ;
     word-wrap: break-word;
@@ -17,6 +18,7 @@
     border-radius: 20px;
     background-color: rgb(60, 61, 61);
     border:  solid 4px rgb(60, 61, 61);
+    
   }
 
   @media screen and (max-width: 685px) {

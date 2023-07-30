@@ -7,7 +7,7 @@ import ThemeContext from './context/TeameContext.js';
 
 
 function TaskForm({ create }) {
-    
+
     const { theme } = useContext(ThemeContext);
 
     const [post, setPost] = useState({ body: "" })
@@ -24,10 +24,10 @@ function TaskForm({ create }) {
 
     return (
         <form className='task__form'
-        style={{
-            backgroundColor: theme.backgroundColor,
-            color: theme.textColor,
-          }}
+            style={{
+                backgroundColor: theme.backgroundColor,
+                color: theme.textColor,
+            }}
         >
             <MyInput placeholder='Добавьте задачу'
                 value={post.body}

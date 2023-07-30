@@ -12,10 +12,14 @@ import ThemeContext from './context/TeameContext.js';
 
 function Page() {
   const storedPosts = JSON.parse(localStorage.getItem("posts"));
-  const [posts, setPosts] = useState(storedPosts);
+  const [posts, setPosts] = useState(storedPosts)
 
   const createPost = (newPost) => {
-    setPosts([newPost, ...posts])
+    if (posts) {
+      setPosts([newPost, ...posts])
+    } else {
+      setPosts([newPost])
+    }
   }
 
   const removePost = (post) => {
@@ -30,14 +34,14 @@ function Page() {
 
   useEffect(() => {
     const storedPosts = JSON.parse(localStorage.getItem("posts"));
-    if (storedPosts) {
-      setPosts(storedPosts);
-    }
+    setPosts(storedPosts);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("posts", JSON.stringify(posts));
-    const storedPosts = JSON.parse(localStorage.getItem("posts"));
+
+    if (posts) {
+      localStorage.setItem("posts", JSON.stringify(posts));
+    }
   }, [posts]);
 
   const { theme } = useContext(ThemeContext)
@@ -47,18 +51,29 @@ function Page() {
   const [finishPosts, setFinishPosts] = useState(storedFinishPosts);
 
   useEffect(() => {
-    localStorage.setItem("finishPosts", JSON.stringify(finishPosts));
+    if (finishPosts) {
+      localStorage.setItem("finishPosts", JSON.stringify(finishPosts));
+    }
   }, [finishPosts]);
-
+  /*
+    function removeLocal() {
+      localStorage.removeItem("finishPosts");
+      localStorage.removeItem("posts");
+    }
+  
+    //removeLocal();
+  */
   useEffect(() => {
     const storedFinishPosts = JSON.parse(localStorage.getItem("finishPosts"));
-    if (storedFinishPosts.length > 0) {
-      setFinishPosts(storedFinishPosts)
-    }
+    setFinishPosts(storedFinishPosts)
   }, []);
 
   const createFinishPost = (newPost) => {
-    setFinishPosts([newPost, ...finishPosts])
+    if (finishPosts) {
+      setFinishPosts([newPost, ...finishPosts])
+    } else {
+      setFinishPosts([newPost])
+    }
   };
 
   const removeFinishPost = (post) => {
@@ -78,7 +93,7 @@ function Page() {
       <TaskForm
         create={createPost}
       />
-      {posts.length !== 0
+      {posts && posts.length !== 0
         ?
         <TaskList posts={posts}
           remove={removePost}

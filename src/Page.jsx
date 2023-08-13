@@ -12,11 +12,15 @@ import ThemeContext from './context/TeameContext.js';
 
 function Page() {
   const storedPosts = JSON.parse(localStorage.getItem("posts"));
+
   const [posts, setPosts] = useState(storedPosts)
+
+
+  // создание задачи
 
   const createPost = (newPost) => {
     if (posts) {
-      setPosts([newPost, ...posts])
+      setPosts([...posts, newPost])
     } else {
       setPosts([newPost])
     }
@@ -55,14 +59,8 @@ function Page() {
       localStorage.setItem("finishPosts", JSON.stringify(finishPosts));
     }
   }, [finishPosts]);
-  /*
-    function removeLocal() {
-      localStorage.removeItem("finishPosts");
-      localStorage.removeItem("posts");
-    }
-  
-    //removeLocal();
-  */
+
+
   useEffect(() => {
     const storedFinishPosts = JSON.parse(localStorage.getItem("finishPosts"));
     setFinishPosts(storedFinishPosts)

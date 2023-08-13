@@ -8,7 +8,7 @@ function App() {
 
   return (
     <ThemeProvider>
-     <Page />
+      <Page />
     </ThemeProvider>
   );
 }
